@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>TIBLAST</title>
+  </head>
+  <body class="bg-kedua">
+    <!-- navbar -->
+    <nav
+      class="fixed top-0 left-0 w-full bg-pertama px-4 text-putih font-Kodchasan text-base z-50"
+    >
+      <div class="flex justify-between items-center py-2">
+        <!-- Ubah py-4 menjadi py-2 untuk mengurangi tinggi -->
+        <div class="w-[150px] h-[50px]">
+          <!-- Sesuaikan ukuran logo -->
+          <a href="#"><img src="src/img/Logo TIB.png" alt="logo" /></a>
+        </div>
+        <button
+          class="block md:hidden text-putih hover:bg-ketiga p-2 rounded-md"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+        >
+          ☰
+        </button>
+        <div class="hidden md:flex space-x-3">
+          <!-- Kurangi space antar menu -->
+          <a href="#" class="px-2 py-2 hover:bg-ketiga hover:rounded-lg"
+            >Home</a
+          >
+          <a href="#gallery" class="px-2 py-2 hover:bg-ketiga hover:rounded-lg"
+            >Gallery</a
+          >
+          <a href="#member" class="px-2 py-2 hover:bg-ketiga hover:rounded-lg"
+            >Member</a
+          >
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col bg-pertama p-2"
+      >
+        <a href="#" class="py-2 hover:bg-ketiga hover:rounded-lg">Home</a>
+        <a href="#gallery" class="py-2 hover:bg-ketiga hover:rounded-lg"
+          >Gallery</a
+        >
+        <a href="#member" class="py-2 hover:bg-ketiga hover:rounded-lg"
+          >Member</a
+        >
+      </div>
+    </nav>
+
+    <!-- tombol back to top -->
+    <div
+      class="w-10 h-10 bg-ketiga border-kedua rounded-full flex fixed bottom-5 right-5 z-50"
+    >
+      <a href="#" class="m-auto"
+        ><img src="src/img/arrow-up.png" alt="arrow" class="w-8"
+      /></a>
+    </div>
+
+    <!-- home page -->
+    <div class="bg-kedua relative">
+      <div class="w-full z-10">
+        <img
+          src="src/img/Foto-Background.png"
+          alt="foto-background"
+          class="w-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute inset-0 flex items-center justify-center text-white font-Kodchasan font-light"
+      >
+        <div
+          class="w-full max-w-[46rem] mx-auto mt-4 p-4 bg-opacity-70 bg-gray-800 rounded-lg shadow-lg"
+        >
+          <div class="relative">
+            <!-- Video Player -->
+            <div class="flex justify-center mb-4">
+              <iframe
+                src="drive.google.com/file/d/1cLac_0WAQqooflnp3wI62IzRpqjnhMLl/preview"
+                width="100%"
+                height="360"
+                allow="autoplay"
+                class="rounded-lg shadow-lg"
+              ></iframe>
+            </div>
+            <!-- Text Content -->
+            <p class="text-justify text-lg">
+              Perkenalkan kami TI-1B, kelas yang selalu seru dan penuh semangat
+              di mana, solidaritas kami tinggi sebagaimana slogan TIK PNJ!.
+              Dalam kelas ini, mahasiswa tidak hanya fokus pada penguasaan
+              materi Teknik Informatika, tetapi juga membangun hubungan yang
+              erat melalui kerja sama dan kolaborasi. Dengan semangat
+              kebersamaan, TI-1B menciptakan suasana belajar yang menyenangkan,
+              di mana setiap tantangan dihadapi bersama dan setiap pencapaian
+              dirayakan sebagai hasil usaha kolektif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div
+      id="gallery"
+      class="w-full text-center font-Kodchasan text-4xl text-putih inline mt-10"
+    >
+      <h1>Our Gallery</h1>
+    </div>
+    <div
+      class="mx-auto p-4 md:p-10 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-putih font-Kodchasan"
+    >
+      <div
+        class="bg-ketiga col-span-1 p-6 grid items-center rounded-md hover:scale-105 transition"
+      >
+        <img src="./src/img/fotbar1.jpg" alt="Image" class="mb-4 rounded-md" />
+        <p class="font-light">
+          Di depan gerbang ilmu kami berdiri tegap, TI 1B Angkatan 24, siap
+          meniti setiap tahap. Dengan semangat membara dan tekad yang kuat,
+          Menuju masa depan cerah, bersama melangkah mantap.
+        </p>
+      </div>
+      <div
+        class="bg-ketiga col-span-1 p-6 grid items-center rounded-md hover:scale-105 transition"
+      >
+        <img src="./src/img/fotbar2.jpg" alt="Image" class="mb-4 rounded-md" />
+        <p class="font-light">
+          Di tangga harapan kami berdiri bersama, TI 1B Angkatan 24, satu hati
+          satu rasa. Melangkah ke atas, menggapai cita dan asa, Bersama dalam
+          suka, tak gentar dalam duka.
+        </p>
+      </div>
+      <div
+        class="bg-ketiga col-span-1 p-6 grid items-center rounded-md hover:scale-105 transition"
+      >
+        <img src="./src/img/fotbar3.jpg" alt="Image" class="mb-4 rounded-md" />
+        <p class="font-light">
+          Di bawah sinar rembulan, kami teguh berdiri, TI 1B Angkatan 24,
+          semangat tak pernah sirna. Malam menjadi saksi, tekad kami takkan
+          lari, Bersama menatap bintang, merajut mimpi yang indah.
+        </p>
+      </div>
+      <div
+        class="bg-ketiga col-span-1 p-6 grid items-center rounded-md hover:scale-105 transition"
+      >
+        <img src="./src/img/fotbar4.jpg" alt="Image" class="mb-4 rounded-md" />
+        <p class="font-light">
+          Di bawah sinar rembulan, kami teguh berdiri, TI 1B Angkatan 24,
+          semangat tak pernah sirna. Malam menjadi saksi, tekad kami takkan
+          lari, Bersama menatap bintang, merajut mimpi yang indah.
+        </p>
+      </div>
+      <div
+        class="bg-ketiga col-span-1 p-6 grid items-center rounded-md hover:scale-105 transition"
+      >
+        <img src="./src/img/fotbar 8.jpg" alt="Image" class="mb-4 rounded-md" />
+        <p class="font-light">
+          Dalam ruang ilmu, kami bersama belajar, TI 1B Angkatan 24, tekun tanpa
+          lelah. Setiap detik berharga, pengetahuan kami kejar, Demi masa depan
+          gemilang, penuh dengan berkah.
+        </p>
+      </div>
+      <div
+        class="bg-ketiga col-span-1 p-6 grid items-center rounded-md hover:scale-105 transition"
+      >
+        <img src="./src/img/fotbar 6.jpg" alt="Image" class="mb-4 rounded-md" />
+        <p class="font-light">
+          Di tangga perjuangan, kami berfoto ceria, TI 1B Angkatan 24, penuh
+          semangat membara. Setiap langkah bersama, menuju puncak bahagia,
+          Bersama kita bisa, meraih mimpi dan cita.
+        </p>
+      </div>
+    </div>
+
+    <!-- member -->
+    <div
+      id="member"
+      class="w-full text-center font-Kodchasan text-4xl text-putih"
+    >
+      <h1>Meet Our Members</h1>
+    </div>
+    <div
+      class="w-full flex justify-center items-center mt-10 px-4 sm:px-8 md:px-16 lg:px-24"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-8 md:gap-10 lg:gap-20"
+      >
+        <!-- row 1 -->
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/fikr._0/">
+            <img src="src/img/fikri.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Adelio Rais F.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/buzurafu/">
+            <img src="src/img/akmal.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Akmal Mushab A.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/rizkyachantika/">
+            <img src="src/img/ika.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Annura Rizkya C.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/hii_amemura/">
+            <img src="src/img/sheva.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Arya Raditya S. P.
+          </p>
+        </div>
+        <!-- row 2 -->
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/boyishwara/">
+            <img src="src/img/boy.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Boy Ishwara A.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/dendyrafialg_/">
+            <img src="src/img/dendi.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Dendy Rafi A. G.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/andrabgstr/">
+            <img src="src/img/diandra.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Diandra Bagustri
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/farrelmaahira/">
+            <img src="src/img/farrel.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Farrel Maahira A. N.
+          </p>
+        </div>
+        <!-- row 3 -->
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/gab.ryvnka/">
+            <img src="src/img/gabriel.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Gabriel Halomoan R. T.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/hanifzkrn/">
+            <img src="src/img/hanif zakran.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Hanif Zakran E.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/mah_al_ra/">
+            <img src="src/img/mahfudh.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Mahfudh Al R.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/rizlradfz/">
+            <img src="src/img/baim.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Maulana Ibrahim
+          </p>
+        </div>
+        <!-- row 1 -->
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/rizsd21/">
+            <img src="src/img/rizki.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Mohammad Rizki S.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/_rofakbar/">
+            <img src="src/img/akbar.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Muhammad Akbar R.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/nip_hanipp/">
+            <img src="src/img/hanif zidan.JPG" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Muhammad Hanif Z.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/rezrfn/">
+            <img src="src/img/reza arifin 2.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Muhammad Reza A.
+          </p>
+        </div>
+        <!-- row 1 -->
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/daorza00/">
+            <img src="src/img/reza hafizzi.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Muhammad Reza H.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/divntomcca/">
+            <img src="src/img/mecca.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Nadiva Mecca R.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/zuhairalh_/">
+            <img src="src/img/naqib.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Naqib Zuhair A.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/_naufalbintang_/">
+            <img src="src/img/potrait-pict.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Naufal Bintang P. H.
+          </p>
+        </div>
+        <!-- row 4 -->
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/nugroho.nc/">
+            <img src="src/img/nugroho.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Nugroho Nur C.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/zwarr10/">
+            <img src="src/img/azwar.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Ramadani Azwar
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/riyan_s_a/">
+            <img src="src/img/rian.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Riyan Sohibul A.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/pampayooo/">
+            <img src="src/img/sello.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Sello Lintang P.
+          </p>
+        </div>
+        <!-- row 5 -->
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/shid_bahri/">
+            <img src="src/img/shidqi.JPG" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Shidqi Athallah B.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/sulthonfabiann/">
+            <img src="src/img/sulthon.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Sulthon Fabian
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/thierryud/">
+            <img src="src/img/thierry.JPG" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Thierry Yudha D.
+          </p>
+        </div>
+        <div
+          class="w-full overflow-hidden mb-8 grayscale hover:cursor-pointer hover:grayscale-0 hover:scale-110 transition duration-300 ease-out object-cover group"
+        >
+          <a href="https://www.instagram.com/ysufhamzh/">
+            <img src="src/img/yusuf.jpg" alt="" class="rounded-lg" />
+          </a>
+          <p
+            class="absolute bottom-2 left-2 font-Kodchasan bg-ketiga bg-opacity-50 rounded-lg text-putih px-2 py-1 opacity-0 group-hover:opacity-100 transition"
+          >
+            Yusuf Hamzah T.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
